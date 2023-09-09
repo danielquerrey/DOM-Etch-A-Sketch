@@ -1,0 +1,59 @@
+body {
+    background-color: bisque;
+}
+
+.loading-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+}
+
+#header-btn-placeholder {
+    display: flex;
+    justify-content: center;
+}
+
+#header-btn {
+    margin: 20px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: red;
+}
+
+
+#box-array {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid blue;
+    max-width: 1000px;
+    max-height: 1000px;
+}
+
+#row {
+    display: flex;
+    justify-content:flex-start;
+    height: 25px;
+
+}
+
+#cell {
+    
+    background-color: maroon;
+    border: 1px solid black;
+    height: auto;
+    width: 1000px; 
+    /* this is the max width so no matter what dimensions it always fills up */
+    
+}
