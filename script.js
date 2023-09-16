@@ -7,7 +7,8 @@ function startGame(e) {
     console.log(num_boxes);
     // if (Object.is(document.querySelector('#box-array').firstElementChild, null)) return console.log('no child');
     let boxArray = document.querySelector('#box-array');
-    if (!(boxArray.hasChildNodes())) { console.log('no child'); } else {
+    if (!(boxArray.hasChildNodes())) { console.log('no child'); }
+    else {
         while (boxArray) {
             if (boxArray.firstElementChild) { boxArray.firstElementChild.remove(); }
             else break;
