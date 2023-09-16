@@ -58,14 +58,11 @@ p {
 
 #header-btn-placeholder {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #header-btn {
-    /* margin: 20px;
-    padding: 10px;
-    padding-right: 20px;
-    padding-left: 20px; */
+    
     margin-top: 2vh;
     padding-right: 2vw;
     padding-left: 2vw;
@@ -79,10 +76,28 @@ p {
     background-color: goldenrod;
 }
 
-#header-btn:hover {
+#git-btn {
+    
+    margin-top: 2vh;
+    margin-left: 1vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-bottom: 2vh;
+    color: black;
+    border:3px solid black;
+    border-radius: 20px;
+    transition: .5s;
+    background-color: goldenrod;
+}
+
+#header-btn:hover, #git-btn:hover{
     transition: .5s;
     scale:1.2;
 }
+
+
 
 
 #box-array {
@@ -110,7 +125,6 @@ p {
     background-color: azure;
     border: 1px solid black;
     width: 80vw;
-    /* this is the max width so no matter what dimensions it always fills up */
     transition: .1s;
 }
 

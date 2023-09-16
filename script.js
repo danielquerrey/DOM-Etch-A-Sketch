@@ -5,7 +5,6 @@ function startGame(e) {
     let num_boxes = Number(prompt(" Enter number of grid squares (A * A) "));
     if (!num_boxes) return console.log("Wrong input"); // type check HERE
     console.log(num_boxes);
-    // if (Object.is(document.querySelector('#box-array').firstElementChild, null)) return console.log('no child');
     let boxArray = document.querySelector('#box-array');
     if (!(boxArray.hasChildNodes())) { console.log('no child'); }
     else {
@@ -21,7 +20,6 @@ function startGame(e) {
         for (let j = 0; j < num_boxes; j++) {
             let cell = document.createElement('div');
             cell.id = 'cell';
-            // console.log(cell);
             row.appendChild(cell);
         }
         let row_sel = document.querySelector('#box-array');
@@ -32,6 +30,12 @@ function startGame(e) {
 
 }
 
+function gitLink(e) {
+    window.open("https://github.com/danielquerrey/DOM-Etch-A-Sketch", "_blank");
+}
+
+let gitButton = document.querySelector('#git-btn');
+gitButton.addEventListener('click', gitLink);
 
 let startButton = document.querySelector('#header-btn');
 startButton.addEventListener('click', startGame);
