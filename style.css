@@ -1,5 +1,5 @@
 html {
-    background-image: url(/img/DOM-background.jpg);
+    background-image: url(./img/DOM-background.jpg);
     background-position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,11 +109,11 @@ p {
     border: 1px solid black;
     width: 80vw;
     /* this is the max width so no matter what dimensions it always fills up */
-    transition: .3s;
+    transition: .1s;
 }
 
 #cell:hover {
-    transition: .3s;
+    transition: .1s;
     scale:1.2;
     background: goldenrod;
 
